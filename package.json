@@ -1,9 +1,9 @@
 {
   "name": "ion-login",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Jeanpier Mendoza",
   "scripts": {
+    "start:ion": "ionic serve",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
