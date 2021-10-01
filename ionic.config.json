@@ -1,0 +1,8 @@
+{
+  "name": "Ion Login",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "b57668da"
+}
