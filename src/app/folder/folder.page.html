@@ -4,6 +4,13 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>{{ folder }}</ion-title>
+    <ion-buttons slot="end" class="ion-margin-end">
+      <ion-icon
+        slot="icon-only"
+        name="exit-outline"
+        (click)="logout()"
+      ></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -15,7 +22,15 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h1>Welcome, {{ displayName }}</h1>
+    <p>
+      Explore
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components"
+        >UI Components</a
+      >
+    </p>
   </div>
 </ion-content>

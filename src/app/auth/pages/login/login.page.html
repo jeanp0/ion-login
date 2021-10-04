@@ -1,0 +1,57 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/auth/register">Sign Up</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-horizontal">
+  <h1 class="ion-text-center ion-margin-bottom">Log In</h1>
+
+  <form [formGroup]="form" (ngSubmit)="login()">
+    <div class="ion-margin-bottom">
+      <ion-item lines="full">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input
+          #email
+          inputmode="email"
+          type="email"
+          formControlName="email"
+          clearInput
+          required
+        ></ion-input>
+      </ion-item>
+      <span class="text-error" *ngIf="controlInvalid('email')">
+        Ingrese un email válido
+      </span>
+    </div>
+
+    <div class="ion-margin-bottom">
+      <ion-item lines="full">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input
+          inputmode="text"
+          type="password"
+          formControlName="password"
+          clearInput
+          required
+        ></ion-input>
+      </ion-item>
+      <span class="text-error" *ngIf="controlInvalid('password')">
+        Campo requerido
+      </span>
+    </div>
+
+    <div class="ion-margin-vertical">
+      <ion-button type="submit" color="primary" expand="block">
+        Log In
+      </ion-button>
+    </div>
+  </form>
+</ion-content>

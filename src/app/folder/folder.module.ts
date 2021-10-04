@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { FolderComponentRoutingModule } from './folder-routing.module';
-import { FolderComponent } from './folder.component';
+import { FolderPage } from './folder.page';
 
 @NgModule({
   imports: [
@@ -12,6 +12,6 @@ import { FolderComponent } from './folder.component';
     IonicModule,
     FolderComponentRoutingModule,
   ],
-  declarations: [FolderComponent],
+  declarations: [FolderPage],
 })
 export class FolderPageModule {}

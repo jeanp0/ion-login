@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AuthService } from './auth/services/auth.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -14,5 +16,10 @@ export class AppComponent {
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
+
+  get logged(): boolean {
+    return !!this.authService.authUser.uid;
+  }
+
+  constructor(private authService: AuthService) {}
 }
