@@ -35,10 +35,10 @@ export class LoginPage implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.form.reset({
-      email: 'jeanpi3rm@gmail.com',
-      password: '12345',
-    });
+    // this.form.reset({
+    //   email: 'jeanpi3rm@gmail.com',
+    //   password: '12345',
+    // });
   }
 
   controlInvalid(control: string) {
