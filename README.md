@@ -12,10 +12,7 @@
 
 ## Capturas
 
-![Login vacío](https://github.com/jeanp0/ion-login/blob/master/resources/screenshot_0.png?raw=true)
-![Login con redenciales correctas](https://github.com/jeanp0/ion-login/blob/master/resources/screenshot_1.png?raw=true)
-![Login con redenciales incorrectas](https://github.com/jeanp0/ion-login/blob/master/resources/screenshot_2.png?raw=true)
-![App autenticada](https://github.com/jeanp0/ion-login/blob/master/resources/screenshot_4.png?raw=true)
+![Login con redenciales correctas](https://github.com/jeanp0/ion-login/blob/master/resources/login_0.png?raw=true)
 
 ## Backend utilizado
 
