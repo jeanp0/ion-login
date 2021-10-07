@@ -16,4 +16,4 @@
 
 ## Backend utilizado
 
-API RESTful con JWT, desarrollada en Spring Boot con Spring Security y JWT: https://github.com/jeanp0/spring-security-jwt-example
+API RESTful desarrollada en Spring Boot con Spring Security y JWT: https://github.com/jeanp0/spring-security-jwt-example
